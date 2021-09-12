@@ -1,0 +1,31 @@
+/* Orden de los estilos:
+1. Posicionamiento
+2. Modelo de caja
+3. Tipografia
+4. Visaules
+5. Otros
+*/
+
+:root {
+    /* Colores */
+    --bitcoin-orange: hsl(33, 93%, 54%);
+    --soft-orange:hsl(29, 100%, 92%);
+    --secondary-blue: hsl(205, 93%, 54%);
+    --soft-blue: hsl(205, 100%, 95%);
+    --warm-black: hsl(30, 7%, 12%);
+    --black: hsl(36, 7%, 15%);
+    --grey: hsl(0, 0%, 73%);
+    --off-white: hsl(20, 23%, 97%);
+    --just-white: hsl(0, 0%, 100%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'DM Sans', sans-serif;
+}
