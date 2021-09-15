@@ -14,7 +14,6 @@
     --soft-blue: hsl(205, 100%, 95%);
     --warm-black: hsl(30, 7%, 12%);
     --black: hsl(36, 7%, 15%);
-    --grey: hsl(0, 0%, 73%);
     --off-white: hsl(20, 23%, 97%);
     --just-white: hsl(0, 0%, 100%);
 }
@@ -107,3 +106,59 @@ header img {
     margin-left: 10px;
     background-image: url('./assets/icons/arrow-black.svg');
 }
+
+/* Styles to main content */
+
+main {
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+    background-color: var(--off-white);
+}
+
+/* Styles to exchange section */
+
+.exchange {
+    width: 100%;
+    height: auto;
+    padding-top: 80px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.exchange__image-wrapper {
+    /* width: 70%; */
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    background-image: url('./assets/images/bitcoin.svg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* shorthand => background: url(...) center/cover no-repreat */
+}
+
+.exchange__title {
+    width: 90%;
+    min-width: 288px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.exchange__title h2 {
+    margin-bottom: 30px;
+    font-size: 2.4rem;
+    line-height: 2.6rem;
+    font-weight: bold;
+    color: var(--warm-black);
+}
+
+.exchange__title p {
+    margin-bottom: 30px;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    font-weight: 500;
+    color: hsl(0, 0%, 73%);
+}
+
