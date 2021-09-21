@@ -37,7 +37,7 @@
                 <p>Traemos información en tiempo real de las casas de cambio y las monedas más importantes del mundo.</p>
             </div>
             <section class="tables">
-                <div class="exchange__table-container">
+                <div class="exchange__table-container" id="table1">
                     <div class="table__title">
                         <h3>Monedas</h3>
                     </div>
@@ -54,10 +54,10 @@
                     <div class="table__data">
                         <p><strong>Actualizado: </strong>24 Nov 23:25</p>
                     </div>
-                    <span class="table__control table__control-next"></span>
+                    <a class="table__control table__control-next" href="#table2"></a>
                 </div>
 
-                <div class="commision__table-container">
+                <div class="commision__table-container" id="table2">
                     <div class="table__title table__title--blue">
                         <h3>Comisiones</h3>
                     </div>
@@ -74,11 +74,50 @@
                     <div class="table__data table__data--blue">
                         <p><strong>Actualizado: </strong>24 Nov 23:25</p>
                     </div>
-                    <span class="table__control table__control-prev"></span>
+                    <a class="table__control table__control-prev" href="#table1"></a>
                 </div>
             </section>
         </section>
-        <section></section>
+        <section class="product__detail">
+            <span class="product__detail__logo"></span>
+            <div class="product__detail__title">
+                <h2>Creamos un producto sin comparación.</h2>
+                <p>Confiable y diseñado para su uso diario.</p>
+            </div>
+            <section class="product-cards__container">
+                <article class="product-card__feature">
+                    <span class="clock"></span>
+                    <h3 class="product-card__title">Tiempo real</h3>
+                    <p class="product-card__body">
+                        Nuestro API toma información minuto a minuto sobre las tasas que más determinan el comportamiento.
+                    </p>
+                </article>
+
+                <article class="product-card__feature">
+                    <span class="eye"></span>
+                    <h3 class="product-card__title">No hay tasas escondidas</h3>
+                    <p class="product-card__body">
+                        Ni en la compra o al momento de exit, Batabit siempre te muestra el costo real de lo que estás adquiriendo.
+                    </p>
+                </article>
+
+                <article class="product-card__feature">
+                    <span class="dollar"></span>
+                    <h3 class="product-card__title">Compara monedas</h3>
+                    <p class="product-card__body">
+                        No más rumores, con Babtabit sabrás el valor real de cada moneda en el mercado actual.
+                    </p>
+                </article>
+
+                <article class="product-card__feature">
+                    <span class="check"></span>
+                    <h3 class="product-card__title">Información confiable</h3>
+                    <p class="product-card__body">
+                        Nuestras fuentes están 100% verificadas y continuamos auditando su contenido mientras se actualizan.
+                    </p>
+                </article> 
+            </section>
+        </section>
         <section></section>
         <section></section>
     </main>

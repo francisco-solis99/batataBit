@@ -306,3 +306,104 @@ main {
     right: 0;
     left: -30px;
 }
+
+
+/* Styles to the product details section */
+
+
+.product__detail {
+    position: relative;
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+    padding: 20px 10px;
+    background-color: var(--warm-black);
+}
+
+.product__detail__logo {
+    position: absolute;
+    top: -12.5px;
+    left: calc(50% - 20px); /* -20 porque su width es 40px */
+    width: 40px;
+    height: 25px;
+    background-image: url('./assets/images/batata.svg');
+}
+
+.product__detail__title {
+    width: 90%;
+    min-width: 288px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.product__detail__title h2 {
+    margin-bottom: 20px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--just-white);
+}
+
+.product__detail__title p {
+   margin-bottom: 20px;
+   font-size: 1.4rem;
+   font-weight: 500;
+   line-height: 1.8rem;
+   color: #808080;
+}
+
+/* styles to features cards */
+
+.product-card__feature {
+    width: 90%;
+    min-width: 288px;
+    max-width: 400px;
+    height: 150px;
+    margin: 15px auto;
+    padding: 16px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
+    background-color: var(--black);
+}
+
+.product-card__feature span {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.product-card__title {
+    margin: 10px 0;
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 1.8rem;
+    color: var(--just-white);
+}
+
+.product-card__body {
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #808080;
+}
+
+.product-card__feature .clock {
+    background-image: url('./assets/icons/clock.svg');
+}
+
+.product-card__feature .eye {
+    background-image: url('./assets/icons/eye.svg');
+}
+
+.product-card__feature .dollar {
+    background-image: url('./assets/icons/dollar-sign.svg');
+}
+
+.product-card__feature .check {
+    background-image: url('./assets/icons/check-circle.svg');
+}
