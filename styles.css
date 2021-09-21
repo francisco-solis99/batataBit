@@ -164,9 +164,13 @@ main {
 }
 
 /* Styles to table */
-/* .tables {
-    display: flex;
-} */
+.tables {
+    display: grid;
+    grid-template-columns: 100% 100%;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+}
 
 .exchange__table-container,
 .commision__table-container {
@@ -183,6 +187,7 @@ main {
     gap: 15px 0;
     margin: 0 auto;
     font-family: "Inter",sans-serif;
+    scroll-snap-align: center;
 }
 
 .table__title {
@@ -289,7 +294,7 @@ main {
     width: 13px;
     height: 8px;
     position: absolute;
-    right: -10%;
+    right: -30px;
     top: calc(var(--height-table)/2 - 8px);
     background-image: url('./assets/icons/arrow-black.svg');
     transform: rotate(-90deg);
@@ -298,5 +303,6 @@ main {
 
 .table__control-prev {
     transform: rotate(90deg);
-    left: -10%;
+    right: 0;
+    left: -30px;
 }
