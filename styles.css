@@ -360,7 +360,8 @@ main {
     width: 90%;
     min-width: 288px;
     max-width: 400px;
-    height: 150px;
+    min-height: 150px;
+    height: auto;
     margin: 15px auto;
     padding: 16px;
     border-radius: 5px;
@@ -406,4 +407,25 @@ main {
 
 .product-card__feature .check {
     background-image: url('./assets/icons/check-circle.svg');
+}
+
+/* Styles to comodin section */
+
+.bitcoin-img__container {
+    width: 100%;
+    min-width: 320px;
+    height: 70vh;
+    background-image: url('./assets/images/bitcoinbaby.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+}
+
+.bitcoin-img__container h2{
+    padding-top: 60px;
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 2.6rem;
+    color: var(--just-white);
 }
