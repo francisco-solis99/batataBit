@@ -12,8 +12,8 @@
     --soft-orange:hsl(29, 100%, 92%);
     --secondary-blue: hsl(205, 93%, 54%);
     --soft-blue: hsl(205, 100%, 95%);
-    --warm-black: hsl(30, 7%, 12%);
-    --black: hsl(36, 7%, 15%);
+    --warm-black: hsl(36, 8%, 12%);
+    --black: hsl(36, 6%, 15%);
     --grey: hsl(0, 0%, 73%);
     --off-white: hsl(20, 23%, 97%);
     --just-white: hsl(0, 0%, 100%);
@@ -28,6 +28,7 @@
 html {
     font-size: 62.5%;
     font-family: 'DM Sans', sans-serif;
+    scroll-behavior: smooth;
 }
 
 header {
@@ -428,4 +429,214 @@ main {
     font-weight: 700;
     line-height: 2.6rem;
     color: var(--just-white);
+}
+
+/* Styles to the plans section */
+
+.plans-container {
+    width: 100%;
+    min-width: 320px;
+    padding-bottom: 60px;
+    text-align: center;
+    background-color: var(--off-white);
+}
+
+.plans__title {
+    width: 90%;
+    min-width: 288px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.plans__title h2 {
+    padding-top: 50px;
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 2.6rem;
+    color: var(--black);
+}
+
+.plans__title p {
+    padding-top: 20px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #757575;
+}
+/* Slider */
+.plans__container-slider {
+    width: 100%;
+    height: 332px;
+    display: flex;
+    padding: 8px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
+
+.plans__container-slider::-webkit-scrollbar,
+.tables::-webkit-scrollbar {
+    background-color: var(--soft-orange);
+    height: 3px;
+}
+
+.plans__container-slider::-webkit-scrollbar-thumb,
+.tables::-webkit-scrollbar-thumb {
+    background-color: hsl(33, 89%, 72%);
+    border-radius: 2px;
+}
+
+.plan__card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    min-width: 230px;
+    max-width: 300px;
+    min-height: 247px;
+    height: auto;
+    margin: 50px 8px 0;
+    padding: 0 15px;
+    border-radius: 8px;
+    background-color: var(--just-white);
+    box-shadow: 0 4px 8px rgba(89, 73, 30, 0.16);
+    position: relative;
+    scroll-snap-align: center;
+    transition: all ease-in-out 300ms;
+}
+
+.plan__card:hover {
+    box-shadow: 8px 10px 10px rgb(89, 73, 30, 0.16);
+}
+
+.plan__card > p {
+    width: 100px;
+    height: 30px;
+    padding: 8px 0;
+    position: absolute;
+    top: -15px;
+    left: calc(50% - 50px);
+    font-family: "Inter",sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 1.4rem;
+    border-radius: inherit;
+    color: var(--just-white);
+    background-color: var(--bitcoin-orange);
+}
+
+.plan__card-price {
+    text-align: center;
+}
+
+.plan__card-price h3 {
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #000;
+}
+
+.plan__price {
+    font-family: "Inter",sans-serif;
+    font-size: 5.2rem;
+    font-weight: 700;
+    line-height: 6.3rem;
+    letter-spacing: -3px;
+    color: var(--black);
+}
+
+.plan__price sup, 
+.plan__msg {
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.4rem;
+}
+
+.plan__price sup {
+    vertical-align: 25px;
+    margin-right: 3px;
+}
+
+.plan__msg {
+    width: 90%;
+    padding-top: 5px;
+    margin: 0 auto;
+    font-family: "Inter",sans-serif;
+    color: #757575;
+}
+
+.plan__CTA {
+    width: 150px;
+    height: 48px;
+    margin: 0 auto;
+    margin-top: 15px;
+    font-family: "DM Sans", sans-serif;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    font-weight: 700;
+    border: 2px solid var(--bitcoin-orange);
+    border-radius: 4px;
+    background-color: var(--off-white);
+    color: var(--warm-black);
+    cursor: pointer;
+    transition: all ease-in 300ms;
+}
+
+.plan__CTA:hover {
+    background-color: var(--bitcoin-orange);
+    color: var(--just-white);
+}
+
+.plan__CTA:hover span {
+    background-color: var(--off-white);
+    border-radius: 6px;
+    /* vertical-align: middle; */
+}
+
+.plan__CTA span {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background-image: url('./assets/icons/arrow-orange.svg');
+    background-position: center;
+    vertical-align: text-bottom;
+    transition: all ease-in 300ms;
+}
+
+/* Styles to ooter*/
+
+footer {
+    display: flex;
+    width: 100%;
+    min-width: 320px;
+    height: 150px;
+    background-color: var(--bitcoin-orange);
+}
+
+footer section {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__left ul {
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    font-weight: 500;
+    list-style: none;
+}
+
+.footer__left ul li {
+    margin: 10px 0;
+}
+
+.footer__left ul li a {
+    text-decoration: none;
+    color: var(--just-white);
+    cursor: pointer;
+}
+
+.footer__left ul li a:hover {
+    text-decoration: underline;
 }
