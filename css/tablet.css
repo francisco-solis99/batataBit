@@ -1,0 +1,50 @@
+/* Styles to tables */
+.tables {
+    width: 70%;
+    max-width: 930px;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
+    overflow-x: initial;
+}
+
+.table__control {
+    display: none;
+}
+
+.exchange__table-container,
+.commision__table-container {
+    --height-table: 300px;
+}
+
+/* Styles to product cards */
+
+.product-cards__container {
+    display: flex;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    max-width: 930px;
+}
+
+/* Styles to comodin image */
+
+.bitcoin-img__container {
+    /* To make a little paralax */
+    background-attachment: fixed;
+}
+
+/* Styles to plans section */
+
+.plans__container-slider {
+    justify-content: center;
+    overflow-x: initial;
+}
+
+.plan__card {
+    margin: 50px 15px 0;
+}
+
+.plans__container-slider article:nth-child(2) {
+    transform: scale(1.1);
+}
+
+

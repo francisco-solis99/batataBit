@@ -31,6 +31,11 @@ html {
     scroll-behavior: smooth;
 }
 
+::selection {
+    background-color: var(--bitcoin-orange);
+    color: var(--just-white);
+}
+
 header {
     --width-header:100%;
     display: flex;
@@ -416,7 +421,7 @@ main {
     width: 100%;
     min-width: 320px;
     height: 70vh;
-    background-image: url('./assets/images/bitcoinbaby.png');
+    background-image: url('./assets/images/bitcoinbaby2x.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
