@@ -426,6 +426,7 @@ main {
     background-position: center;
     background-size: cover;
     text-align: center;
+    /* clip-path: polygon(0 0, 75% 0, 100% 100%, 25% 100%); */
 }
 
 .bitcoin-img__container h2{
@@ -644,4 +645,9 @@ footer section {
 
 .footer__left ul li a:hover {
     text-decoration: underline;
+}
+
+.footer__right img {
+    width: auto;
+    height: auto;
 }
