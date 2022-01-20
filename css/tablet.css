@@ -42,9 +42,13 @@
 .plan__card {
     margin: 50px 15px 0;
 }
-
-.plans__container-slider article:nth-child(2) {
+ 
+.plan__card:nth-child(2) {
     transform: scale(1.1);
 }
 
+/* Experimental */
+.plans__container-slider:hover > article:not(:hover) {
+    opacity: 0.5;
+} 
 
