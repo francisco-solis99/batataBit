@@ -206,7 +206,7 @@ main {
 }
 
 .table__title h3 {
-    font-size: 1.8rem; 
+    font-size: 1.8rem;
     font-weight: 700;
     line-height: 2.3rem;
     color: var(--bitcoin-orange);
@@ -333,6 +333,9 @@ main {
     width: 40px;
     height: 25px;
     background-image: url('./assets/images/batata.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .product__detail__title {
@@ -551,7 +554,7 @@ main {
     color: var(--black);
 }
 
-.plan__price sup, 
+.plan__price sup,
 .plan__msg {
     font-size: 1.2rem;
     font-weight: 500;
